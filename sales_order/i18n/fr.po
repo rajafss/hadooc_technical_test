@@ -1,0 +1,169 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sales_order
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-05 09:21+0000\n"
+"PO-Revision-Date: 2023-11-05 09:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sales_order
+#: model_terms:ir.ui.view,arch_db:sales_order.view_order_form_sale
+msgid "<span style=\"padding: 10px;\">Remaining:</span>"
+msgstr ""
+
+#. module: sales_order
+#: model_terms:ir.ui.view,arch_db:sales_order.view_order_form_sale
+msgid "<span style=\"padding: 10px;\">Total:</span>"
+msgstr ""
+
+#. module: sales_order
+#: model_terms:ir.ui.view,arch_db:sales_order.report_payment_sale
+msgid "<strong>Payment Date:</strong>"
+msgstr "Date de paiement:"
+
+#. module: sales_order
+#: model_terms:ir.ui.view,arch_db:sales_order.report_payment_sale
+msgid "<strong>Salesperson:</strong>"
+msgstr "Vendeuse:"
+
+#. module: sales_order
+#: model:ir.model.fields,field_description:sales_order.field_sale_payment_wizard__amount
+#: model_terms:ir.ui.view,arch_db:sales_order.report_payment_sale
+msgid "Amount"
+msgstr "Montant"
+
+#. module: sales_order
+#: model_terms:ir.ui.view,arch_db:sales_order.sale_payment_wizard_form
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: sales_order
+#: model:ir.model.fields,field_description:sales_order.field_sale_payment_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: sales_order
+#: model:ir.model.fields,field_description:sales_order.field_sale_payment_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: sales_order
+#: model:ir.model.fields,field_description:sales_order.field_sale_payment_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: sales_order
+#: model:ir.model.fields,field_description:sales_order.field_sale_payment_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: sales_order
+#: model:ir.model.fields,field_description:sales_order.field_sale_payment_wizard__currency_id
+msgid "Journal Currency"
+msgstr "Devise du journal"
+
+#. module: sales_order
+#: model:ir.model.fields,field_description:sales_order.field_sale_payment_wizard____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: sales_order
+#: model:ir.model.fields,field_description:sales_order.field_sale_payment_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: sales_order
+#: model:ir.model.fields,field_description:sales_order.field_sale_payment_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: sales_order
+#: model_terms:ir.ui.view,arch_db:sales_order.sale_payment_wizard_form
+msgid "Make Payment"
+msgstr "Effectuer le paiement"
+
+#. module: sales_order
+#: model:ir.model.fields,field_description:sales_order.field_sale_order__account_payment_ids
+msgid "Pay sale "
+msgstr "Payer la vente"
+
+#. module: sales_order
+#: model_terms:ir.ui.view,arch_db:sales_order.sale_payment_wizard_form
+msgid "Payment"
+msgstr "Paiement"
+
+#. module: sales_order
+#: model:ir.model.fields,field_description:sales_order.field_sale_payment_wizard__payment_date
+msgid "Payment Date"
+msgstr "Date de paiement"
+
+#. module: sales_order
+#: model:ir.model.fields,field_description:sales_order.field_sale_payment_wizard__journal_id
+msgid "Payment Journal"
+msgstr "Journal des paiements"
+
+#. module: sales_order
+#: model_terms:ir.ui.view,arch_db:sales_order.report_payment_sale
+msgid "Payment Methode"
+msgstr "Mode de paiement"
+
+#. module: sales_order
+#: model:ir.model,name:sales_order.model_account_payment
+#: model_terms:ir.ui.view,arch_db:sales_order.view_order_form_sale
+msgid "Payments"
+msgstr "Paiements"
+
+#. module: sales_order
+#: model_terms:ir.ui.view,arch_db:sales_order.report_payment_sale
+msgid "Receipt"
+msgstr "Reçu"
+
+#. module: sales_order
+#: model_terms:ir.ui.view,arch_db:sales_order.view_order_form_sale
+msgid "Register Payment"
+msgstr "S'inscrire Paiement"
+
+#. module: sales_order
+#: model:ir.model.fields,field_description:sales_order.field_sale_order__remaining_amount
+msgid "Remaining Amount"
+msgstr "Montant restant"
+
+#. module: sales_order
+#: model:ir.actions.report,name:sales_order.sale_payment_report_action
+msgid "Report Payment"
+msgstr "Rapport Paiement"
+
+#. module: sales_order
+#: model:ir.model.fields,field_description:sales_order.field_account_payment__sale_id
+msgid "Sale"
+msgstr "Vente"
+
+#. module: sales_order
+#: model:ir.actions.act_window,name:sales_order.action_sale_payment_wizard
+#: model:ir.model,name:sales_order.model_sale_payment_wizard
+msgid "Sale Payment"
+msgstr "Paiement de la vente"
+
+#. module: sales_order
+#: model:ir.model,name:sales_order.model_sale_order
+msgid "Sales Order"
+msgstr "Bon de commande"
+
+#. module: sales_order
+#: model_terms:ir.ui.view,arch_db:sales_order.view_order_form_sale
+msgid "Total"
+msgstr ""
+
+#. module: sales_order
+#: model:ir.model.fields,field_description:sales_order.field_sale_order__total_payment
+msgid "Total Payment"
+msgstr "Paiement total"

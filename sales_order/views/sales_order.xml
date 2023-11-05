@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <data>
+            <!--     herite sale order form view-->
+            <!--  create a button register payment     -->
+            <!--      add the payment vals-->
+            <!--      print sale report pdf-->
+            <!--      see the page payments, remaining amount and total payments-->
+        <record id="view_order_form_sale" model="ir.ui.view">
+            <field name="name">sale order</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <header>
+                        <button name="%(sales_order.action_sale_payment_wizard)d"
+                                type="action" string="Register Payment"
+                                class="oe_highlight" />
+                    </header>
+                    <xpath expr="//page[@name='order_lines']" position="after">
+                        <page string="Payments">
+                            <field name="account_payment_ids"  widget="section_and_note_one2many" >
+                                <form>
+                                    <group>
+                                        <field name="date"/>
+                                         <field name="currency_id" invisible="1"/>
+                                        <field name="payment_method_id" options="{'color_field': 'color', 'no_create_edit': True}"/>
+                                    </group>
+                                    <group>
+                                        <field name="amount" sum="Total"
+                                           options="{'currency_field': 'currency_id'}" widget="monetary" readonly="1"  />
+                                    </group>
+                                </form>
+                                <tree editable="bottom">
+                                    <field name="date"/>
+                                    <field name="payment_method_id" options="{ 'no_create_edit': False}"/>
+                                    <field name="amount" widget="monetary"/>
+                                    <field name="currency_id" invisible="1"/>
+                                    <field name="state" invisible="1"/>
+                                    <button name="action_print" icon="fa-minus-square" type="object"/>
+                                </tree>
+                            </field>
+                            <group name="note_group" col="6" class="mt-2 mt-md-0">
+                                <group class="oe_left font-weight-bold" colspan="2">
+                                    <span style="padding: 10px;">Remaining:</span>
+                                     <h1><field name="remaining_amount" widget="monetary" nolabel="1" /></h1>
+                                </group>
+                                <group class="oe_subtotal_footer oe_right font-weight-bold" colspan="2">
+                                    <span style="padding: 10px;">Total:</span>
+                                    <h1><field name="total_payment" widget="monetary" nolabel="1" colspan="2"/></h1>
+                                </group>
+                                <div class="oe_clear"/>
+                            </group>
+                        </page>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+  </data>
+</odoo>
